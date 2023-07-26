@@ -1,0 +1,98 @@
+# Product: 		Support Ticketing System (powered by Web API Server 2.03)
+# Version:		0.12
+# Developer:	Aeric Poon
+# Email:        aeric80@gmail.com
+# Copyright:    Computerise System Solutions 2023
+# License:		Proprietary (Single Developer)
+# Paypal:       https://paypal.me/aeric80/
+
+# Disclaimer:
+# This source code is provided as it is. 
+# No warranty or professional support is provided after the purchase. 
+# This license entitles for bug fixes and minor subversions updates only.
+# No further customization or programming services included.
+# You may use this source code and modify for personal and commercial use 
+# but you are not allowed to redistribute this source code as a product.
+# Meaning you cannot claim the original code as your own creation and resell it.
+# Other open source projects included in this project follow the original license
+# and intellectual property of the respective owners.
+
+# Lines starting with '#' are comments.
+# Backslash character at the end of line means that the command continues in the next line.
+
+# Define App Constants
+HOME_TITLE=Support Ticketing System
+APP_TITLE=Support
+APP_TRADEMARK=TeaCat
+APP_COPYRIGHT=Copyright Computerise 2023
+
+# Server Path
+ROOT_URL=http://127.0.0.1
+ROOT_PATH=web
+API_NAME=api
+API_VERSIONING=True
+
+# Java server port
+ServerPort=6000
+SSLPort=6060
+
+# SSL Keystores
+# Generate a keystore from Windows CMD
+# C:\Java\jdk-11.0.1\bin\keytool -keystore keystore -alias jetty -genkey -keyalg RSA
+# Copy keystore file to Objects folder of the B4J project
+
+# Windows development server
+# Leave SSL_KEYSTORE_DIR as empty (Objects folder or File.DirApp)
+#SSL_KEYSTORE_DIR=
+#SSL_KEYSTORE_FILE=keystore
+#SSL_KEYSTORE_PASSWORD=xxxxxxxxx
+
+# Ubuntu Linux VPS
+#SSL_KEYSTORE_DIR=/etc/letsencrypt/live/mydomain.com
+#SSL_KEYSTORE_FILE=keystore.jks
+#SSL_KEYSTORE_PASSWORD=xxxxxxxxx
+
+# Define Email Settings
+#SMTP_SERVER=xxxxxxxxx
+#SMTP_USERNAME=xxxxxxxxx
+#SMTP_PASSWORD=xxxxxxxxx
+#SMTP_PORT=465
+#SMTP_USESSL=True
+#HTML_BODY=True
+#ADMIN_EMAIL=xxxxxxxxx
+
+# Timezone
+TimeZone=8
+
+# DATABASE CONFIGURATION
+
+## MySQL configuration:
+DbName=support
+DbType=mysql
+## mysql-connector-java-5.1.49   # This is deprecated
+# DriverClass=com.mysql.jdbc.Driver
+## mysql-connector-java-8.0.30
+DriverClass=com.mysql.cj.jdbc.Driver
+JdbcUrl=jdbc:mysql://localhost/support?characterEncoding=utf8&useSSL=false
+User=root
+Password=password
+MaxPoolSize=100
+
+## MS SQL Server configuration:
+# DriverClass=net.sourceforge.jtds.jdbc.Driver
+# JdbcUrl=jdbc:jtds:sqlserver://localhost/support
+
+## Postgresql configuration:
+# DriverClass=org.postgresql.Driver
+# JdbcUrl=jdbc:postgresql://localhost/support
+
+## Firebird configuration:
+# DriverClass=org.firebirdsql.jdbc.FBDriver
+# JdbcUrl=jdbc:firebirdsql://localhost:3050/C:/B4X/Development/Support/Objects/support.fdb?encoding=UTF8
+
+# SQLite configuration:
+# DbName=support.db
+# DbType=sqlite
+# DriverClass=com.sqlite.JdbcUrl
+# JdbcUrl=jdbc:sqlite:support.db
+# JdbcUrl=jdbc:sqlite:C:\\B4X\\Development\\Support\\Objects\\support.db
