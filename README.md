@@ -1,5 +1,6 @@
 # customer-support-ticketing-b4x
 Customer Support Ticketing System built with B4X as backend
+Support database for MySQL, SQlite, MS SQL Server, Postgres and Firebird using common B4X code without writing SQL
 
 Please navigate to [Wiki](https://github.com/pyhoon/customer-support-ticketing-b4x/wiki) to learn more!
 
