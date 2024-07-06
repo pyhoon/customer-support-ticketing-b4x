@@ -1,5 +1,5 @@
 # customer-support-ticketing-b4x
-Customer Support Ticketing System built with B4X as backend
+Customer Support Ticketing System built using B4X
 
 Support database for MySQL, SQlite, MS SQL Server, Postgres and Firebird using common B4X code without writing SQL
 
